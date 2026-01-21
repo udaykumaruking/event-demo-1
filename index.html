@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mehta Family Hub - Celebrating Traditions from Ahmedabad to Dallas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="language-toggle">
+                <button class="lang-btn active" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="te">తెలుగు</button>
+                <button class="lang-btn" data-lang="hi">हिंदी</button>
+            </div>
+            <h1 class="hero-title" data-en="The Mehta Family Hub" data-te="మెహతా కుటుంబ హబ్" data-hi="मेहता परिवार हब">The Mehta Family Hub</h1>
+            <p class="hero-subtitle" data-en="Celebrating our traditions from Ahmedabad to Dallas" data-te="అహ్మదాబాద్ నుండి డలాస్ వరకు మా సంప్రదాయాలను జరుపుకుంటున్నాము" data-hi="अहमदाबाद से डलास तक अपनी परंपराओं का जश्न मना रहे हैं">Celebrating our traditions from Ahmedabad to Dallas</p>
+        </div>
+    </section>
+
+    <!-- Multi-Day Itinerary -->
+    <section id="itinerary" class="itinerary-section">
+        <div class="container">
+            <h2 class="section-title" data-en="Our Celebration Journey" data-te="మా వేడుక ప్రయాణం" data-hi="हमारी उत्सव यात्रा">Our Celebration Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-event="mehndi">
+                    <div class="timeline-date">Day 1</div>
+                    <div class="timeline-content">
+                        <h3 data-en="Mehndi Ceremony" data-te="మెహెంది వేడుక" data-hi="मेहंदी समारोह">Mehndi Ceremony</h3>
+                        <button class="what-is-this-btn" data-event="mehndi" data-en="What is this?" data-te="ఇది ఏమిటి?" data-hi="यह क्या है?">What is this?</button>
+                        <div class="event-explanation" id="explanation-mehndi" style="display: none;">
+                            <p class="cultural-significance" data-en="A joyful pre-wedding ritual where intricate henna designs are applied to the bride's hands and feet, symbolizing beauty, joy, and spiritual awakening." data-te="ఒక ఆనందకరమైన వివాహ పూర్వ చట్టం, ఇక్కడ వధువు చేతులు మరియు పాదాలకు సంక్లిష్టమైన హెన్నా డిజైన్‌లు వర్తింపజేయబడతాయి, అది అందం, ఆనందం మరియు ఆధ్యాత్మిక మేల్కొలుపును సూచిస్తుంది." data-hi="एक आनंददायक पूर्व-विवाह अनुष्ठान जहां दुल्हन के हाथों और पैरों पर जटिल मेंहदी डिजाइन लगाए जाते हैं, जो सुंदरता, आनंद और आध्यात्मिक जागृति का प्रतीक है।"></p>
+                            <p class="dress-code-vibe" data-en="Dress Code Vibe: Yellow Florals - prepare to get messy! Traditional colors encouraged." data-te="దుస్తులు కోడ్ వైబ్: పసుపు పువ్వులు - గజిబిజి కోసం సిద్ధంగా ఉండండి! సంప్రదాయ రంగులు ప్రోత్సహించబడతాయి." data-hi="ड्रेस कोड वाइब: पीले फूल - गड़बड़ी के लिए तैयार रहें! पारंपरिक रंगों को प्रोत्साहित किया जाता है।"></p>
+                        </div>
+                        <p class="venue">
+                            <span data-en="The Marigold, Legacy Hall" data-te="ది మరిగోల్డ్, లెగసీ హాల్" data-hi="द मैरीगोल्ड, लेगेसी हॉल">The Marigold, Legacy Hall</span>
+                            <a href="https://maps.google.com/?q=Legacy+Hall+Plano+Texas" target="_blank" class="map-link" data-en="📍 Get Directions" data-te="📍 దిశలను పొందండి" data-hi="📍 दिशा-निर्देश प्राप्त करें">📍 Get Directions</a>
+                        </p>
+                        <div class="timeline-actions">
+                            <button class="action-btn dress-code" data-en="Dress Code" data-te="దుస్తులు కోడ్" data-hi="ड्रेस कोड">Dress Code</button>
+                            <button class="action-btn ritual-guide" data-en="Ritual Guide" data-te="చట్టం గైడ్" data-hi="रिवाज गाइड">Ritual Guide</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-event="sangeet">
+                    <div class="timeline-date">Day 2</div>
+                    <div class="timeline-content">
+                        <h3 data-en="Sangeet Night" data-te="సంగీత రాత్రి" data-hi="संगीत रात">Sangeet Night</h3>
+                        <button class="what-is-this-btn" data-event="sangeet" data-en="What is this?" data-te="ఇది ఏమిటి?" data-hi="यह क्या है?">What is this?</button>
+                        <div class="event-explanation" id="explanation-sangeet" style="display: none;">
+                            <p class="cultural-significance" data-en="A musical celebration where both families come together to sing, dance, and perform. It's a night of joy, laughter, and bonding before the wedding." data-te="ఒక సంగీత వేడుక, ఇక్కడ రెండు కుటుంబాలు కలిసి పాడడానికి, నృత్యం చేయడానికి మరియు ప్రదర్శించడానికి వస్తాయి. ఇది వివాహానికి ముందు ఆనందం, నవ్వు మరియు బంధం యొక్క రాత్రి." data-hi="एक संगीत उत्सव जहां दोनों परिवार गाने, नृत्य करने और प्रदर्शन करने के लिए एक साथ आते हैं। यह शादी से पहले खुशी, हंसी और बंधन की रात है।"></p>
+                            <p class="dress-code-vibe" data-en="Dress Code Vibe: Glamorous and festive! Think sequins, bright colors, and comfortable dancing shoes." data-te="దుస్తులు కోడ్ వైబ్: భవ్యమైన మరియు వేడుక! సీక్విన్స్, ప్రకాశవంతమైన రంగులు మరియు సౌకర్యవంతమైన నృత్య షూల గురించి ఆలోచించండి." data-hi="ड्रेस कोड वाइब: शानदार और उत्सव! सीक्विन्स, चमकीले रंग और आरामदायक नृत्य जूते के बारे में सोचें।"></p>
+                        </div>
+                        <p class="venue">
+                            <span data-en="The Marigold, Legacy Hall" data-te="ది మరిగోల్డ్, లెగసీ హాల్" data-hi="द मैरीगोल्ड, लेगेसी हॉल">The Marigold, Legacy Hall</span>
+                            <a href="https://maps.google.com/?q=Legacy+Hall+Plano+Texas" target="_blank" class="map-link" data-en="📍 Get Directions" data-te="📍 దిశలను పొందండి" data-hi="📍 दिशा-निर्देश प्राप्त करें">📍 Get Directions</a>
+                        </p>
+                        <div class="timeline-actions">
+                            <button class="action-btn dress-code" data-en="Dress Code" data-te="దుస్తులు కోడ్" data-hi="ड्रेस कोड">Dress Code</button>
+                            <button class="action-btn ritual-guide" data-en="Ritual Guide" data-te="చట్టం గైడ్" data-hi="रिवाज गाइड">Ritual Guide</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-event="muhurtham">
+                    <div class="timeline-date">Day 3</div>
+                    <div class="timeline-content">
+                        <h3 data-en="The Muhurtham" data-te="ముహూర్తం" data-hi="मुहूर्त">The Muhurtham</h3>
+                        <button class="what-is-this-btn" data-event="muhurtham" data-en="What is this?" data-te="ఇది ఏమిటి?" data-hi="यह क्या है?">What is this?</button>
+                        <div class="event-explanation" id="explanation-muhurtham" style="display: none;">
+                            <p class="cultural-significance" data-en="The sacred wedding ceremony conducted according to Vedic traditions. The couple exchanges vows and takes seven steps (Saptapadi) around the sacred fire, symbolizing their journey together." data-te="వేద సంప్రదాయాల ప్రకారం నిర్వహించబడే పవిత్ర వివాహ వేడుక. జంట ప్రమాణాలు మారుకుంటుంది మరియు పవిత్ర అగ్ని చుట్టూ ఏడు అడుగులు (సప్తపది) వేస్తుంది, వారి కలిసి ప్రయాణాన్ని సూచిస్తుంది." data-hi="वैदिक परंपराओं के अनुसार आयोजित पवित्र विवाह समारोह। दंपति प्रतिज्ञाओं का आदान-प्रदान करते हैं और पवित्र अग्नि के चारों ओर सात कदम (सप्तपदी) लेते हैं, जो उनकी एक साथ यात्रा का प्रतीक है।"></p>
+                            <p class="dress-code-vibe" data-en="Dress Code Vibe: Traditional and elegant. Rich colors like red, gold, and royal blue. Formal attire required." data-te="దుస్తులు కోడ్ వైబ్: సంప్రదాయ మరియు సొగసైన. ఎరుపు, బంగారు మరియు రాయల్ బ్లూ వంటి సంపన్న రంగులు. అధికారిక దుస్తులు అవసరం." data-hi="ड्रेस कोड वाइब: पारंपरिक और सुरुचिपूर्ण। लाल, सोना और रॉयल ब्लू जैसे समृद्ध रंग। औपचारिक पोशाक आवश्यक।"></p>
+                        </div>
+                        <p class="venue">
+                            <span data-en="Sacred Ceremony Venue" data-te="పవిత్ర వేడుక వేదిక" data-hi="पवित्र समारोह स्थल">Sacred Ceremony Venue</span>
+                            <a href="https://maps.google.com/?q=wedding+venue+Dallas+Texas" target="_blank" class="map-link" data-en="📍 Get Directions" data-te="📍 దిశలను పొందండి" data-hi="📍 दिशा-निर्देश प्राप्त करें">📍 Get Directions</a>
+                        </p>
+                        <div class="timeline-actions">
+                            <button class="action-btn dress-code" data-en="Dress Code" data-te="దుస్తులు కోడ్" data-hi="ड्रेस कोड">Dress Code</button>
+                            <button class="action-btn ritual-guide" data-en="Ritual Guide" data-te="చట్టం గైడ్" data-hi="रिवाज गाइड">Ritual Guide</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Blessings Feature -->
+    <section id="blessings" class="blessings-section">
+        <div class="container">
+            <h2 class="section-title" data-en="From India with Love" data-te="ఇండియా నుండి ప్రేమతో" data-hi="भारत से प्यार के साथ">From India with Love</h2>
+            <div class="blessings-content">
+                <div class="voice-note-section">
+                    <div class="voice-recorder">
+                        <div class="recorder-icon">🎤</div>
+                        <h3 data-en="Voice Note Guestbook" data-te="వాయిస్ నోట్ గెస్ట్‌బుక్" data-hi="आवाज़ नोट गेस्टबुक">Voice Note Guestbook</h3>
+                        <p class="voice-instructions" data-en="Record a 30-second audio blessing directly from your phone or WhatsApp" data-te="మీ ఫోన్ లేదా వాట్సాప్ నుండి నేరుగా 30-సెకన్ల ఆడియో ఆశీర్వాదాన్ని రికార్డ్ చేయండి" data-hi="अपने फोन या WhatsApp से सीधे 30-सेकंड का ऑडियो आशीर्वाद रिकॉर्ड करें">Record a 30-second audio blessing directly from your phone or WhatsApp</p>
+                        <button class="record-btn" data-en="Record Message" data-te="సందేశాన్ని రికార్డ్ చేయండి" data-hi="संदेश रिकॉर्ड करें">Record Message</button>
+                        <a href="https://wa.me/1234567890?text=Voice%20Blessing" target="_blank" class="whatsapp-link" data-en="📱 Or send via WhatsApp" data-te="📱 లేదా వాట్సాప్ ద్వారా పంపండి" data-hi="📱 या WhatsApp के माध्यम से भेजें">📱 Or send via WhatsApp</a>
+                    </div>
+                </div>
+                <div class="video-gallery-section">
+                    <h3 data-en="Video Messages from Family" data-te="కుటుంబం నుండి వీడియో సందేశాలు" data-hi="परिवार से वीडियो संदेश">Video Messages from Family</h3>
+                    <div class="video-grid">
+                        <div class="video-placeholder">
+                            <div class="play-icon">▶</div>
+                            <p data-en="Auntie's Blessing" data-te="అంటీ ఆశీర్వాదం" data-hi="चाची का आशीर्वाद">Auntie's Blessing</p>
+                        </div>
+                        <div class="video-placeholder">
+                            <div class="play-icon">▶</div>
+                            <p data-en="Grandparents' Message" data-te="ముత్తాతల సందేశం" data-hi="दादा-दादी का संदेश">Grandparents' Message</p>
+                        </div>
+                        <div class="video-placeholder">
+                            <div class="play-icon">▶</div>
+                            <p data-en="Cousins' Wishes" data-te="బంధువుల శుభాకాంక్షలు" data-hi="चचेरे भाइयों की शुभकामनाएं">Cousins' Wishes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Live Stream Window -->
+            <div class="live-stream-section">
+                <h3 data-en="Watch Live from India" data-te="ఇండియా నుండి ప్రత్యక్షంగా చూడండి" data-hi="भारत से लाइव देखें">Watch Live from India</h3>
+                <div class="live-stream-window">
+                    <div class="stream-placeholder">
+                        <div class="live-badge">🔴 LIVE</div>
+                        <div class="stream-icon">📹</div>
+                        <p data-en="YouTube / Zoom Live Feed" data-te="యూట్యూబ్ / జూమ్ లైవ్ ఫీడ్" data-hi="YouTube / Zoom लाइव फीड">YouTube / Zoom Live Feed</p>
+                        <p class="stream-note" data-en="Grandma doesn't have to hunt for a link in WhatsApp!" data-te="అమ్మమ్మ వాట్సాప్‌లో లింక్ కోసం వెతకాల్సిన అవసరం లేదు!" data-hi="दादी को WhatsApp में लिंक ढूंढने की जरूरत नहीं है!">Grandma doesn't have to hunt for a link in WhatsApp!</p>
+                        <button class="stream-btn" data-en="Join Live Stream" data-te="లైవ్ స్ట్రీమ్‌లో చేరండి" data-hi="लाइव स्ट्रीम में शामिल हों">Join Live Stream</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Shagun Section -->
+    <section id="shagun" class="shagun-section">
+        <div class="container">
+            <h2 class="section-title" data-en="Virtual Shagun Portal" data-te="వర్చువల్ శగున్ పోర్టల్" data-hi="वर्चुअल शगुन पोर्टल">Virtual Shagun Portal</h2>
+            <p class="section-subtitle" data-en="Send your blessings and wishes digitally" data-te="మీ ఆశీర్వాదాలు మరియు శుభాకాంక్షలను డిజిటల్గా పంపండి" data-hi="अपने आशीर्वाद और शुभकामनाएं डिजिटल रूप से भेजें">Send your blessings and wishes digitally</p>
+            
+            <!-- US Side -->
+            <div class="shagun-split">
+                <div class="shagun-side">
+                    <h3 class="side-title" data-en="From USA" data-te="USA నుండి" data-hi="USA से">From USA</h3>
+                    <div class="payment-options">
+                        <div class="payment-card">
+                            <div class="payment-icon">💳</div>
+                            <h3>Zelle</h3>
+                            <button class="payment-btn" data-en="Send via Zelle" data-te="జెల్ ద్వారా పంపండి" data-hi="ज़ेले के माध्यम से भेजें">Send via Zelle</button>
+                        </div>
+                        <div class="payment-card">
+                            <div class="payment-icon">📱</div>
+                            <h3>Venmo</h3>
+                            <button class="payment-btn" data-en="Send via Venmo" data-te="వెన్మో ద్వారా పంపండి" data-hi="वेनमो के माध्यम से भेजें">Send via Venmo</button>
+                        </div>
+                        <div class="payment-card">
+                            <div class="payment-icon">📲</div>
+                            <h3>QR Code</h3>
+                            <div class="qr-placeholder">
+                                <div class="qr-code"></div>
+                            </div>
+                            <p class="qr-text" data-en="Scan to Send" data-te="పంపడానికి స్కాన్ చేయండి" data-hi="भेजने के लिए स्कैन करें">Scan to Send</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- India Side -->
+                <div class="shagun-side">
+                    <h3 class="side-title" data-en="From India" data-te="ఇండియా నుండి" data-hi="भारत से">From India</h3>
+                    <div class="payment-options">
+                        <div class="payment-card coming-soon">
+                            <div class="payment-icon">🇮🇳</div>
+                            <h3 data-en="UPI Payment" data-te="UPI చెల్లింపు" data-hi="UPI भुगतान">UPI Payment</h3>
+                            <div class="coming-soon-badge" data-en="Coming Soon" data-te="త్వరలో వస్తుంది" data-hi="जल्द आ रहा है">Coming Soon</div>
+                            <p class="coming-soon-text" data-en="UPI and International bank details will be available soon" data-te="UPI మరియు అంతర్జాతీయ బ్యాంక్ వివరాలు త్వరలో అందుబాటులో ఉంటాయి" data-hi="UPI और अंतर्राष्ट्रीय बैंक विवरण जल्द ही उपलब्ध होंगे">UPI and International bank details will be available soon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Content Gallery -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title" data-en="The 24-Hour Reel" data-te="24-గంటల రీల్" data-hi="24 घंटे की रील">The 24-Hour Reel</h2>
+            
+            <!-- QR Code Upload Feature -->
+            <div class="qr-upload-section">
+                <h3 data-en="Scan Your Badge to Upload Photos" data-te="ఫోటోలను అప్‌లోడ్ చేయడానికి మీ బ్యాడ్జ్‌ను స్కాన్ చేయండి" data-hi="फोटो अपलोड करने के लिए अपना बैज स्कैन करें">Scan Your Badge to Upload Photos</h3>
+                <div class="qr-upload-demo">
+                    <div class="badge-scan-demo">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <div class="scan-animation">📷</div>
+                                <p data-en="Point camera at badge" data-te="బ్యాడ్జ్ వద్ద కెమెరాను చూపండి" data-hi="बैज पर कैमरा इंगित करें">Point camera at badge</p>
+                            </div>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="badge-mockup">
+                            <div class="badge-qr-display">
+                                <div class="qr-mini"></div>
+                                <p data-en="Smart Badge" data-te="స్మార్ట్ బ్యాడ్జ్" data-hi="स्मार्ट बैज">Smart Badge</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="upload-note" data-en="Guests scan their NFC badge to instantly upload photos from their phone to this gallery" data-te="అతిథులు తమ NFC బ్యాడ్జ్‌ను స్కాన్ చేసి తమ ఫోన్ నుండి ఈ గ్యాలరీకి ఫోటోలను తక్షణంగా అప్‌లోడ్ చేస్తారు" data-hi="मेहमान अपने NFC बैज को स्कैन करके अपने फोन से इस गैलरी में तुरंत फोटो अपलोड करते हैं">Guests scan their NFC badge to instantly upload photos from their phone to this gallery</p>
+                </div>
+            </div>
+            
+            <div class="reel-container">
+                <div class="reel-video">
+                    <div class="reel-placeholder">
+                        <div class="reel-play-icon">▶</div>
+                        <div class="reel-caption">
+                            <p class="reel-title" data-en="Sangeet Highlights" data-te="సంగీత హైలైట్స్" data-hi="संगीत हाइलाइट्स">Sangeet Highlights</p>
+                            <p class="reel-delivery" data-en="Ready by 10:00 AM Next Day" data-te="తదుపరి రోజు ఉదయం 10:00 గంటలకు సిద్ధంగా ఉంది" data-hi="अगले दिन सुबह 10:00 बजे तक तैयार">Ready by 10:00 AM Next Day</p>
+                            <p class="reel-tagline" data-en="Your biggest selling point over traditional photographers" data-te="సంప్రదాయ ఫోటోగ్రాఫర్‌ల కంటే మీ అతిపెద్ద విక్రయ బిందువు" data-hi="पारंपरिक फोटोग्राफरों पर आपका सबसे बड़ा विक्रय बिंदु">Your biggest selling point over traditional photographers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Physical Merch Preview -->
+    <section class="merch-section">
+        <div class="container">
+            <h2 class="section-title" data-en="Merch & Phygital Shop" data-te="మెర్చ్ & ఫైజిటల్ షాప్" data-hi="मर्च और फिजिकल शॉप">Merch & Phygital Shop</h2>
+            <p class="section-subtitle" data-en="The Physical Connection - See how it all integrates" data-te="భౌతిక కనెక్షన్ - ఇది అన్నీ ఎలా సమగ్రపరుస్తుందో చూడండి" data-hi="भौतिक कनेक्शन - देखें कि यह सब कैसे एकीकृत होता है">The Physical Connection - See how it all integrates</p>
+            <div class="merch-gallery">
+                <div class="merch-item">
+                    <div class="merch-image smart-badge team-bride">
+                        <div class="merch-label">Team Bride</div>
+                        <div class="badge-qr-overlay">
+                            <div class="qr-small"></div>
+                        </div>
+                    </div>
+                    <h3 data-en="Team Bride Badge" data-te="టీమ్ బ్రైడ్ బ్యాడ్జ్" data-hi="टीम ब्राइड बैज">Team Bride Badge</h3>
+                    <p data-en="NFC-enabled badge with QR code for instant photo uploads" data-te="తక్షణ ఫోటో అప్‌లోడ్‌ల కోసం QR కోడ్‌తో NFC-ఎనేబుల్ బ్యాడ్జ్" data-hi="तत्काल फोटो अपलोड के लिए QR कोड के साथ NFC-सक्षम बैज">NFC-enabled badge with QR code for instant photo uploads</p>
+                </div>
+                <div class="merch-item">
+                    <div class="merch-image smart-balloon">
+                        <div class="balloon-qr">
+                            <div class="qr-small"></div>
+                        </div>
+                        <div class="merch-label">Smart Balloon</div>
+                    </div>
+                    <h3 data-en="Smart Balloon with QR" data-te="QR తో స్మార్ట్ బెలూన్" data-hi="QR के साथ स्मार्ट बैलून">Smart Balloon with QR</h3>
+                    <p data-en="Themed balloons with integrated QR codes matching website branding" data-te="వెబ్‌సైట్ బ్రాండింగ్‌తో సమన్వయించబడిన QR కోడ్‌లతో థీమ్డ్ బెలూన్‌లు" data-hi="वेबसाइट ब्रांडिंग से मेल खाने वाले एकीकृत QR कोड के साथ थीम्ड गुब्बारे">Themed balloons with integrated QR codes matching website branding</p>
+                </div>
+                <div class="merch-item">
+                    <div class="merch-image baraat-kit">
+                        <div class="kit-contents">
+                            <div class="kit-item">🎁</div>
+                            <div class="kit-item">🎈</div>
+                            <div class="kit-item">🏷️</div>
+                            <div class="kit-item">📱</div>
+                        </div>
+                        <div class="merch-label">Baraat Kit</div>
+                    </div>
+                    <h3 data-en="Baraat Welcome Kit" data-te="బరాత్ వెల్కమ్ కిట్" data-hi="बरात वेलकम किट">Baraat Welcome Kit</h3>
+                    <p data-en="Customized welcome bag matching the website's theme exactly" data-te="వెబ్‌సైట్ థీమ్‌కు ఖచ్చితంగా సరిపోయే అనుకూల వెల్కమ్ బ్యాగ్" data-hi="वेबसाइट की थीम से बिल्कुल मेल खाने वाला अनुकूलित वेलकम बैग">Customized welcome bag matching the website's theme exactly</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-en="With love from the Mehta Family" data-te="మెహతా కుటుంబం నుండి ప్రేమతో" data-hi="मेहता परिवार से प्यार के साथ">With love from the Mehta Family</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation (WhatsApp-style) -->
+    <nav class="bottom-nav">
+        <a href="#hero" class="nav-item" data-en="Home" data-te="హోమ్" data-hi="होम">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Home</span>
+        </a>
+        <a href="#itinerary" class="nav-item" data-en="Events" data-te="ఈవెంట్‌లు" data-hi="इवेंट्स">
+            <span class="nav-icon">📅</span>
+            <span class="nav-label">Events</span>
+        </a>
+        <a href="#blessings" class="nav-item" data-en="Blessings" data-te="ఆశీర్వాదాలు" data-hi="आशीर्वाद">
+            <span class="nav-icon">🙏</span>
+            <span class="nav-label">Blessings</span>
+        </a>
+        <a href="#shagun" class="nav-item" data-en="Gifts" data-te="బహుమతులు" data-hi="उपहार">
+            <span class="nav-icon">🎁</span>
+            <span class="nav-label">Gifts</span>
+        </a>
+    </nav>
+
+    <!-- Modal for Dress Code / Ritual Guide -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
