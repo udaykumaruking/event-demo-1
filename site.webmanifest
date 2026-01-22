@@ -1,7 +1,7 @@
 {
-    "name": "The Mehta Family Hub",
-    "short_name": "Mehta Hub",
-    "description": "Celebrating traditions from Ahmedabad to Dallas - A luxury wedding and cultural event platform",
+    "name": "The Mehta Family Wedding",
+    "short_name": "Mehta Wedding",
+    "description": "Celebrating traditions from India to Dallas - A luxury wedding and cultural event platform",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#0A1F44",

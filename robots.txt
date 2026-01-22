@@ -1,4 +1,4 @@
-# robots.txt for The Mehta Family Hub
+# robots.txt for The Mehta Family Wedding
 
 User-agent: *
 Allow: /
