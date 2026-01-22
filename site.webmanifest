@@ -1,0 +1,27 @@
+{
+    "name": "The Mehta Family Hub",
+    "short_name": "Mehta Hub",
+    "description": "Celebrating traditions from Ahmedabad to Dallas - A luxury wedding and cultural event platform",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0A1F44",
+    "theme_color": "#0A1F44",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": ["lifestyle", "events", "wedding"],
+    "lang": "en",
+    "dir": "ltr"
+}
