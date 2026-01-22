@@ -320,6 +320,81 @@ navItems.forEach(item => {
     });
 });
 
+// RSVP Form Functionality
+const rsvpForm = document.getElementById('rsvpForm');
+const rsvpSuccess = document.getElementById('rsvpSuccess');
+const decreaseGuests = document.getElementById('decreaseGuests');
+const increaseGuests = document.getElementById('increaseGuests');
+const numGuests = document.getElementById('numGuests');
+const cancelBtn = document.querySelector('.rsvp-cancel-btn');
+
+// Guest counter functionality
+if (decreaseGuests && increaseGuests && numGuests) {
+    decreaseGuests.addEventListener('click', () => {
+        const current = parseInt(numGuests.value);
+        if (current > 1) {
+            numGuests.value = current - 1;
+        }
+    });
+
+    increaseGuests.addEventListener('click', () => {
+        const current = parseInt(numGuests.value);
+        if (current < 20) {
+            numGuests.value = current + 1;
+        }
+    });
+}
+
+// Form submission
+if (rsvpForm) {
+    rsvpForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(rsvpForm);
+        const data = {
+            name: formData.get('guestName'),
+            email: formData.get('guestEmail'),
+            phone: formData.get('guestPhone'),
+            numGuests: formData.get('numGuests'),
+            events: formData.getAll('events'),
+            dietaryRestrictions: formData.get('dietaryRestrictions'),
+            message: formData.get('message')
+        };
+        
+        // In production, this would send to a backend API
+        console.log('RSVP Data:', data);
+        
+        // Show success message
+        rsvpForm.style.display = 'none';
+        rsvpSuccess.style.display = 'block';
+        
+        // Scroll to success message
+        rsvpSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
+        // Optional: Reset form after 5 seconds (for demo purposes)
+        setTimeout(() => {
+            rsvpForm.reset();
+            rsvpForm.style.display = 'flex';
+            rsvpSuccess.style.display = 'none';
+        }, 10000);
+    });
+}
+
+// Clear form button
+if (cancelBtn) {
+    cancelBtn.addEventListener('click', () => {
+        if (confirm(getLocalizedText(
+            'Are you sure you want to clear the form?',
+            'మీరు ఖచ్చితంగా ఫారమ్‌ను క్లియర్ చేయాలనుకుంటున్నారా?',
+            'क्या आप वाकई फॉर्म साफ करना चाहते हैं?'
+        ))) {
+            rsvpForm.reset();
+            numGuests.value = 1;
+        }
+    });
+}
+
 // Initialize - ensure English is set as default
 updateLanguage('en');
 updateActiveNav();

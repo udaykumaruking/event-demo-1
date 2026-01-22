@@ -90,6 +90,81 @@
         </div>
     </section>
 
+    <!-- RSVP Section -->
+    <section id="rsvp" class="rsvp-section">
+        <div class="container">
+            <h2 class="section-title" data-en="RSVP" data-te="RSVP" data-hi="RSVP">RSVP</h2>
+            <p class="section-subtitle" data-en="Please let us know if you'll be joining us for our celebrations" data-te="మా వేడుకలకు మీరు మాకు చేరుకుంటున్నారో లేదో దయచేసి మాకు తెలియజేయండి" data-hi="कृपया हमें बताएं कि क्या आप हमारे उत्सव में शामिल होंगे">Please let us know if you'll be joining us for our celebrations</p>
+            
+            <div class="rsvp-form-container">
+                <form id="rsvpForm" class="rsvp-form">
+                    <div class="form-group">
+                        <label for="guestName" data-en="Your Name" data-te="మీ పేరు" data-hi="आपका नाम">Your Name</label>
+                        <input type="text" id="guestName" name="guestName" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guestEmail" data-en="Email Address" data-te="ఇమెయిల్ చిరునామా" data-hi="ईमेल पता">Email Address</label>
+                        <input type="email" id="guestEmail" name="guestEmail" required placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guestPhone" data-en="Phone Number" data-te="ఫోన్ నంబర్" data-hi="फोन नंबर">Phone Number</label>
+                        <input type="tel" id="guestPhone" name="guestPhone" placeholder="+1 (555) 123-4567">
+                    </div>
+
+                    <div class="form-group">
+                        <label data-en="Number of Guests" data-te="అతిథుల సంఖ్య" data-hi="मेहमानों की संख्या">Number of Guests</label>
+                        <div class="guest-counter">
+                            <button type="button" class="counter-btn" id="decreaseGuests">−</button>
+                            <input type="number" id="numGuests" name="numGuests" value="1" min="1" max="20" readonly>
+                            <button type="button" class="counter-btn" id="increaseGuests">+</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-en="Events You'll Attend" data-te="మీరు హాజరు అవుతున్న ఈవెంట్‌లు" data-hi="आप जिन कार्यक्रमों में भाग लेंगे">Events You'll Attend</label>
+                        <div class="event-checkboxes">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="events" value="mehndi" checked>
+                                <span data-en="Mehndi Ceremony (Day 1)" data-te="మెహెంది వేడుక (రోజు 1)" data-hi="मेहंदी समारोह (दिन 1)">Mehndi Ceremony (Day 1)</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="events" value="sangeet" checked>
+                                <span data-en="Sangeet Night (Day 2)" data-te="సంగీత రాత్రి (రోజు 2)" data-hi="संगीत रात (दिन 2)">Sangeet Night (Day 2)</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="events" value="muhurtham" checked>
+                                <span data-en="The Muhurtham (Day 3)" data-te="ముహూర్తం (రోజు 3)" data-hi="मुहूर्त (दिन 3)">The Muhurtham (Day 3)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dietaryRestrictions" data-en="Dietary Restrictions or Special Requests" data-te="ఆహార పరిమితులు లేదా ప్రత్యేక అభ్యర్థనలు" data-hi="आहार प्रतिबंध या विशेष अनुरोध">Dietary Restrictions or Special Requests</label>
+                        <textarea id="dietaryRestrictions" name="dietaryRestrictions" rows="4" placeholder="Vegetarian, Vegan, Gluten-free, Allergies, etc."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-en="Message for the Couple (Optional)" data-te="జంటకు సందేశం (ఐచ్ఛికం)" data-hi="दंपति के लिए संदेश (वैकल्पिक)">Message for the Couple (Optional)</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Share your excitement and well wishes..."></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="rsvp-submit-btn" data-en="Submit RSVP" data-te="RSVP సమర్పించండి" data-hi="RSVP जमा करें">Submit RSVP</button>
+                        <button type="button" class="rsvp-cancel-btn" data-en="Clear Form" data-te="ఫారమ్‌ను క్లియర్ చేయండి" data-hi="फॉर्म साफ करें">Clear Form</button>
+                    </div>
+                </form>
+
+                <div id="rsvpSuccess" class="rsvp-success" style="display: none;">
+                    <div class="success-icon">✓</div>
+                    <h3 data-en="Thank You!" data-te="ధన్యవాదాలు!" data-hi="धन्यवाद!">Thank You!</h3>
+                    <p data-en="Your RSVP has been received. We can't wait to celebrate with you!" data-te="మీ RSVP స్వీకరించబడింది. మీతో జరుపుకోవడానికి మేము ఎదురుచూస్తున్నాము!" data-hi="आपका RSVP प्राप्त हो गया है। हम आपके साथ जश्न मनाने का इंतजार नहीं कर सकते!">Your RSVP has been received. We can't wait to celebrate with you!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Global Blessings Feature -->
     <section id="blessings" class="blessings-section">
         <div class="container">
@@ -292,6 +367,10 @@
         <a href="#blessings" class="nav-item" data-en="Blessings" data-te="ఆశీర్వాదాలు" data-hi="आशीर्वाद">
             <span class="nav-icon">🙏</span>
             <span class="nav-label">Blessings</span>
+        </a>
+        <a href="#rsvp" class="nav-item" data-en="RSVP" data-te="RSVP" data-hi="RSVP">
+            <span class="nav-icon">✉️</span>
+            <span class="nav-label">RSVP</span>
         </a>
         <a href="#shagun" class="nav-item" data-en="Gifts" data-te="బహుమతులు" data-hi="उपहार">
             <span class="nav-icon">🎁</span>
